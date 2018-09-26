@@ -1,0 +1,96 @@
+
+.reg_contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7% 0 7% 0;
+}
+
+.logo_reg_img {
+    background: url("../images/registration.png") no-repeat;
+    background-size: cover;
+    -ms-flex-preferred-size: 320px;
+    flex-basis: 320px;
+    height: 320px;
+    margin-top: 2%;
+}
+
+
+.form_header {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0 30px 5px;
+}
+
+
+.register_btn,
+.login_btn_send {
+    padding: 15px 150px;
+    background-color: #4b9cd3;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.register_btn:hover,
+.login_btn_send:hover{
+    background-color: #2176af;
+}
+
+
+
+
+/* Successfully registered modal styles */
+.success_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.357);
+}
+
+
+.success_message {
+    width: 320px;
+    overflow: hidden;
+    margin: 20% auto;
+    padding: 1%;
+    text-align: center;
+    color: #228B22;
+    background-color: #fff;
+    border: 2px solid rgba(50, 205, 50, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 9px 8px 0 rgba(50, 205, 50, 0.3), 2px 7px 20px 0 rgba(50, 205, 50, 0.3);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.success_msg_text {
+    font-size: 17px;
+    margin: 20px 0 10px 0;
+}
+
+
+.suc_login_btn {
+    background-color: #32CD32;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+@keyframes modalopen{
+    from{opacity: 0};
+    to{opacity: 1};
+}

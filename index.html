@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="main_background_container">
+        <div class='inner_main_container'>
+            <div class='reg_contents'>
+                <!-- A loader for API -->
+                <div class="fetch_loader_wrap">
+                    <div class="fetch_loader"></div>
+                </div>
+
+                <span class="logo_reg_img"></span>
+                
+
+                <!-- The registration form -->
+                <form class="registration_form">
+                    <div class='form_header'>Register</div>
+                    <div class='email_input_container'>
+                        <input class='input' type="text" name="" id="input_email" placeholder="Username">
+                        <div class='email_verify_errs'></div>
+                    </div>
+                    <div class='pass_input_container'>
+                        <input class='input' type="password" id='input_pass' placeholder="Password">
+                        <div class='pass_verify_errs'></div>
+                    </div>
+                    <div class='pass_input_container'>
+                        <input class='input 'type="password" id='input_confirm_pass' placeholder="Password confirmation">
+                        <div class='pass_confirm_verify_errs'></div>
+                    </div>
+                    <button class='register_btn'>Register</button>
+                    <a class='login_btn login_link'>Login</a>
+                </form>
+
+                <!-- Login form -->
+                <div class='login_form'>
+                    <div class='form_header'>Login</div>
+                    <div class='email_input_container'>
+                        <input class='input' type="text" name="" id="input_email_login" placeholder="Username">
+                        <div class='email_verify_errs_login'></div>
+                    </div>
+                    <div class='pass_input_container'>
+                        <input class='input' type="password" id='input_pass_login' placeholder="Password">
+                        <div class='pass_verify_errs_login'></div>
+                    </div>
+                    <button class='login_btn_send'>Login</button>
+                    <a class='register_link'>Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal if you successfully registered -->
+    <div class="success_modal">
+        <div class="success_message">
+            <img src="./images/success.png">
+            <div class="success_msg_text"> You successfully registered! </div>
+            <button class="suc_login_btn login_btn">Login</button>
+        </div>
+    </div>
+</body>
+
+<!-- Links to javascript -->
+<script src='./js/login.js' defer></script>
+<script src='./js/register.js' defer></script>
+<script src='./js/verify.js' defer></script>
+
+</html>

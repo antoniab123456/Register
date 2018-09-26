@@ -1,0 +1,151 @@
+/* Main reset for all browsers */
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, ul, li, form,
+label, footer, header, nav,section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+footer, header, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+body, html {
+    height: 100%;
+    font-family: Montserrat-Regular, sans-serif;
+}
+
+button, input {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer !important;
+}
+
+/* Main containers */
+.main_background_container {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.main_background_container::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../images/background.jpg');
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.inner_main_container {
+    background-color: #ffffff;
+    height: 65%;
+    width: 80%;
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-20%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+
+/* Styles for the login form */
+
+.login_form{
+    display: none;
+}
+
+.btn_login_style{
+    margin: 0 0 0 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 19px;
+    background-color: #8ab321;
+    color: #ffffff;
+}
+
+.btn_login_style:hover{
+    background-color: #729617;
+}
+
+
+
+.login_link,
+.register_link{
+    color: #4b9cd3;
+    font-size: 15px;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+
+
+.input {
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+    background-color: #e6e6e6;
+}
+
+.input::placeholder {
+    color: #a5a4a4
+}
+
+
+.input,
+.register_btn,
+.login_btn_send  {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+.email_input_container,
+.pass_input_container,
+.pass_confirm_container{
+    position: relative;
+}
+
+/* Error styling */
+.email_verify_errs,
+.pass_verify_errs,
+.pass_confirm_verify_errs,
+.pass_verify_errs_login,
+.email_verify_errs_login{
+    color: #e40808;
+    font-size: 15px;
+    margin-left: 3%;
+    position: absolute;
+    top: -12%;
+    width: 150%;
+}
+

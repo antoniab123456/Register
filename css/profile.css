@@ -1,0 +1,101 @@
+/* Main profile styles */
+.profile_main_container{
+    background-color: #ffffff;
+    height: 73%;
+    width: 80%;
+    border-radius: 15px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateY(-15%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.user_profile_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2% 0 0 0;
+}
+
+.profile_image{
+    width: 180px;
+    height: 200px;
+    border: 1px solid #b1b0b0;
+    background: url('../images/user_profile.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 2% 10% 0 10%;
+}
+
+.profile_form{
+    margin-top: 1%;
+}
+.profile_form label{
+    font-weight: 600;
+    color: #494848;
+    margin-left: 2%;
+
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+.original_select{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;   
+    background: url('../images/arrow.png') no-repeat 93% 50%;
+    margin: 10px 0;
+    padding: 15px 0 15px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    border: none;
+    outline: none;
+    color: #494848;
+}
+
+
+.btn_mode{
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 37.5%;
+}
+
+
+.save_changes, 
+.cancel_changes{
+    margin: 0 0 0 10px;
+}
+
+.cancel_changes{
+    font-size: 14px;
+    color: #494848;
+}
+
+
+.save_changes{
+    background-color: #2176af;
+    border: 10px;
+    padding: 7px 25px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.save_changes:hover{
+    background-color: #145b8a;
+}

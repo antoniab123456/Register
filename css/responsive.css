@@ -1,0 +1,112 @@
+
+/* Styling for width */
+ @media(max-width: 850px) {
+    .logo_reg_img {
+        display: none;
+    }
+    .profile_image{
+        display: none;
+    }
+    
+    .fetch_loader{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fetch_loader{
+        left: 30%;
+        transform: translateX(-30%);
+    }
+
+ 
+}
+
+@media(max-width: 500px) {
+    .registration_form {
+        margin-top: 10%;
+        width: 90%;
+    }
+    .profile_form {
+        margin: auto;
+        width: 90%;
+    }
+
+    .register_btn, .login_btn_send{
+        width: 100%;
+        padding: 15px 0;
+    }
+    .login_form {
+        margin: 15% 0 0 0;
+        width: 90%;
+    }
+
+    .success_message{
+        margin-top: 60%;
+    }
+}
+
+
+
+@media(max-height: 800px){
+    .reg_contents{
+        padding: 5% 0;
+    }
+    .fetch_loader{
+        top: 30%;
+        transform: translateY(-30%);
+    }
+}
+
+/* Styling for height */
+
+@media(max-height: 700px) {
+    .reg_contents{
+        padding: 3% 0;
+    }
+}
+
+
+@media(max-height: 600px) {
+    .reg_contents{
+        padding: 5% 0;
+    }
+
+    .form_header {
+        display: none;
+    }
+
+    .logo_reg_img{
+        margin-top: -2.5%;
+    }
+}
+
+
+
+@media(max-height: 520px) {
+    .reg_contents{
+        padding: 2% 0;
+    }
+    .logo_reg_img{
+        display: none;
+    }
+}
+
+
+@media(max-height: 450px) {
+    .form_header {
+        display: none;
+    }
+    .reg_success{
+        margin: 10% 0 0 0;
+    }
+}
+
+
+
+@media(max-height: 350px){
+    .reg_success_img,
+    .registration_form, 
+    .login_form{
+        display: none !important;
+    } 
+}
